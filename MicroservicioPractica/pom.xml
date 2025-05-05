@@ -21,6 +21,14 @@
 
 
   <build>
-
+<pluginManagement>
+  <plugins>
+    <plugin>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-maven-plugin</artifactId>
+      <version>3.4.4</version>
+    </plugin>
+  </plugins>
+</pluginManagement>
   </build>
 </project>
