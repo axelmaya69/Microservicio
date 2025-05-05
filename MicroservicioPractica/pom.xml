@@ -22,6 +22,9 @@
     <module>
       micoservicio-gateway
     </module>
+    <module>
+      micoservicio-eureka
+    </module>
   </modules>
 
   <properties>
