@@ -8,6 +8,7 @@
   <version>1.0-SNAPSHOT</version>
 
   <name>MicroservicioPractica</name>
+  <packaging>pom</packaging>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,7 +17,11 @@
 
 
     <dependencies>
-
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.22</version>
+      </dependency>
     </dependencies>
 
 
