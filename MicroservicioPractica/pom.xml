@@ -25,6 +25,9 @@
     <module>
       micoservicio-eureka
     </module>
+    <module>
+      microservicioConfigServer
+    </module>
   </modules>
 
   <properties>
