@@ -1,1 +1,7 @@
-spring.application.name=micoservicio-eureka
+server:
+  port: 8761
+
+spring:
+  application:
+    name: microservicio-eureka
+
