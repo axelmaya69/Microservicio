@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="micoservicio-gateway" />
         <module name="micoservicio-eureka" />
+        <module name="microservicioConfigServer" />
       </profile>
     </annotationProcessing>
   </component>
@@ -15,6 +16,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="micoservicio-eureka" options="-parameters" />
       <module name="micoservicio-gateway" options="-parameters" />
+      <module name="microservicioConfigServer" options="-parameters" />
     </option>
   </component>
 </project>
