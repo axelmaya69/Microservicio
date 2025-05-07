@@ -28,6 +28,9 @@
     <module>
       microservicioConfigServer
     </module>
+    <module>
+      microserviceStudent
+    </module>
   </modules>
 
   <properties>
