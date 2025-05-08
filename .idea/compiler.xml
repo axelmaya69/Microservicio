@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="micoservicio-gateway" />
         <module name="microservicioConfigServer" />
+        <module name="microserviceCurso" />
         <module name="micoservicio-eureka" />
         <module name="microserviceStudent" />
       </profile>
@@ -17,6 +18,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="micoservicio-eureka" options="-parameters" />
       <module name="micoservicio-gateway" options="-parameters" />
+      <module name="microserviceCurso" options="-parameters" />
       <module name="microserviceStudent" options="-parameters" />
       <module name="microservicioConfigServer" options="-parameters" />
     </option>
