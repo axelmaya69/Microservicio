@@ -1,4 +1,4 @@
-package com.microservice.curso.microserviceCurso.entities;
+package com.microservice.student.microserviceStudent.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -29,3 +29,4 @@ public class Student {
     private  Long courseId;
 
 }
+
