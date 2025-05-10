@@ -16,21 +16,21 @@ public class StudentServiceImpl implements IStudentService {
 
     @Override
     public List<Student> findAll() {
-        return List.of();
+        return (List<Student>) studentRepository.findAll();
     }
 
     @Override
     public Student findById(Long Id) {
-        return null;
+        return studentRepository.findById(Id).orElseThrow();
     }
 
     @Override
     public void save(Student student) {
-
+    studentRepository.save(student);
     }
 
     @Override
     public List<Student> findByIdCourse(Long idCourse) {
-        return List.of();
+        return studentRepository.findAllByCourseId(idCourse);
     }
 }
