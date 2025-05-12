@@ -14,39 +14,40 @@
   <groupId>com.mycompany.app</groupId>
   <artifactId>MicroservicioPractica</artifactId>
   <version>1.0-SNAPSHOT</version>
-
-  <name>MicroservicioPractica</name>
   <packaging>pom</packaging>
 
   <modules>
-    <module>
-      micoservicio-gateway
-    </module>
-    <module>
-      micoservicio-eureka
-    </module>
-    <module>
-      microservicioConfigServer
-    </module>
-    <module>
-      microserviceStudent
-    </module>
-    <module>
-      microserviceCurso
-    </module>
+    <module>micoservicio-gateway</module>
+    <module>micoservicio-eureka</module>
+    <module>microservicioConfigServer</module>
+    <module>microserviceStudent</module>
+    <module>microserviceCurso</module>
   </modules>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.release>17</maven.compiler.release>
-  </properties>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>2024.0.1</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
+
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
 
     <dependencies>
       <dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
-        <version>1.18.22</version>
+        <version>1.18.30</version>
       </dependency>
     </dependencies>
 
