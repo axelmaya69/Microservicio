@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(name = "microserviceStudent",url = "localhost:8090/api/student")
+@FeignClient(name = "microserviceStudent",url = "localhost:8080/api/student")
 public interface IStudentClient {
 
     @GetMapping("/search-my-course/{idCourse}")
