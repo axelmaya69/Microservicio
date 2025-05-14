@@ -40,8 +40,12 @@
 			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
 		<dependency>
+
+			<!--VERIFICAR QUE SEA ESTA DEPENDENCIA CORRECTAMENTE; YA QUE SI NO
+			VA A DAR ERROR EL GATEWAY Y NO REDIRECCIONARA A LAS APIS-->
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-gateway</artifactId>
+			
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
