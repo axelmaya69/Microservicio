@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: microserviceStudent
+    name: microservice-student
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
