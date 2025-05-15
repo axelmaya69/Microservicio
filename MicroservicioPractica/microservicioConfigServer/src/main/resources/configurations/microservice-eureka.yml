@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: microservicio-eureka
+    name: microservice-eureka
 
 eureka:
   instance:
