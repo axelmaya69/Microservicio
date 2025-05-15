@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: microservice-gateway
+    name: microservice-apigateway
   cloud:
     gateway:
       discovery:
