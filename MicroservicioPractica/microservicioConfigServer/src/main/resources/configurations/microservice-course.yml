@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: microserviceCourse
+    name: microservice-course
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/coursesdb
