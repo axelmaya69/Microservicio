@@ -11,16 +11,16 @@ spring:
           enabled: true
       routes:
         - id: students
-          uri: http://localhost:8090
+          uri: lb://microservice-student
           predicates:
             - Path=/api/student/**
 
         - id: courses
-          uri: http://localhost:9090
+          uri: lb://microservice-course
           predicates:
             - Path=/api/course/**
+
 eureka:
   client:
-    register-with-eureka: false
-
-
+    service-url:
+      defaultZone: http://localhost:8761/eureka
