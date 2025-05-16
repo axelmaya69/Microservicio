@@ -9,15 +9,11 @@ spring:
     url: jdbc:postgresql://localhost:5432/coursesdb
     username: userdev
     password: 12345
-
   jpa:
     hibernate:
       ddl-auto: create
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-
-  config:
-    import: optional:configserver:http://localhost:8888
 
 eureka:
   instance:
