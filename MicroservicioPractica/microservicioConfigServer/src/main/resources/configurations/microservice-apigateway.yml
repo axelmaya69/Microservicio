@@ -1,7 +1,7 @@
 eureka:
   client:
     register-with-eureka: false
-
+#ojo aqui y la clase main del microservicio de apigateawy
 server:
   port: 8080
 
