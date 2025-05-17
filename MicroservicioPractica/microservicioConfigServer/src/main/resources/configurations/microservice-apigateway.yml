@@ -7,7 +7,7 @@ server:
 
 spring:
   application:
-    name: microservice-apigateway
+    name: msvc-gateway
   cloud:
     gateway:
       discovery:
