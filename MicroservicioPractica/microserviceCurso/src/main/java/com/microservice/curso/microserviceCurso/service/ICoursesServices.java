@@ -14,4 +14,6 @@ public interface ICoursesServices {
     void save(Course course);
 
     StudentByCourseResponse findStudentsByIdCourse(Long idCourse);
+
+    //actualizar
 }
