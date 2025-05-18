@@ -14,6 +14,7 @@ public interface IStudentService {
 
     List <Student> findByIdCourse(Long idCourse);
 
-    //Agregar
-    
+    //actualzar
+
+    //
 }
