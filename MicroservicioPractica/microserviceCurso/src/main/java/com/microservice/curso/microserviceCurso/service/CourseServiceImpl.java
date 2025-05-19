@@ -62,6 +62,6 @@ public class CourseServiceImpl implements  ICoursesServices {
 
     @Override
     public void eliminarCourse(Long id) {
-
+    coursesRepository.findById(id);
     }
 }
