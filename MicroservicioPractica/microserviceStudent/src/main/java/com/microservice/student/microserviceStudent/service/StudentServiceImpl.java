@@ -49,6 +49,6 @@ public class StudentServiceImpl implements IStudentService {
 
     @Override
     public void eliminarStudent(Long id) {
-
+    studentRepository.deleteById(id);
     }
 }
