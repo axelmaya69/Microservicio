@@ -17,5 +17,7 @@ public interface ICoursesServices {
 
     //actualizar
     Course updateCourse(Long id, Course course);
+
     //eliminar
+    void eliminarCourse(Long id);
 }
