@@ -15,7 +15,7 @@ public interface IStudentService {
     List <Student> findByIdCourse(Long idCourse);
 
     //actualzar
-
+    Student updateStudent(Long id, Student student);
     //eliminar
 
 }
