@@ -16,6 +16,7 @@ public interface IStudentService {
 
     //actualzar
     Student updateStudent(Long id, Student student);
+    
     //eliminar
-
+    void eliminarStudent (Long id);
 }
