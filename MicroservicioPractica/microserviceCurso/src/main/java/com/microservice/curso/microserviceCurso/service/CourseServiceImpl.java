@@ -48,4 +48,20 @@ public class CourseServiceImpl implements  ICoursesServices {
                 .studentDTOList(studentDTOList)
                 .build();
     }
+
+    @Override
+    public Course updateCourse(Long id, Course course) {
+        Course updateCourse = coursesRepository.findById(id).get();
+        if (coursesRepository.existsById(id)){
+            updateCourse.setName(course.getName());
+            updateCourse.setTeacher(course.getTeacher());
+            return coursesRepository.save(updateCourse);
+        }
+        return null;
+    }
+
+    @Override
+    public void eliminarCourse(Long id) {
+
+    }
 }
