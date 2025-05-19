@@ -16,6 +16,6 @@ public interface ICoursesServices {
     StudentByCourseResponse findStudentsByIdCourse(Long idCourse);
 
     //actualizar
-
+    Course updateCourse(Long id, Course course);
     //eliminar
 }
