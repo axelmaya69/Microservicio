@@ -48,4 +48,9 @@ public class CourseController {
     }
     }
 
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<String> eliminarCourse(@PathVariable Long id){
+        
+    }
+
 }
