@@ -47,4 +47,10 @@ public class StudentController {
     }
     }
 
+
+    @DeleteMapping("delete/{id}")
+    public ResponseEntity<String > eliminarStudent(@PathVariable Long id){
+
+    }
+
 }
