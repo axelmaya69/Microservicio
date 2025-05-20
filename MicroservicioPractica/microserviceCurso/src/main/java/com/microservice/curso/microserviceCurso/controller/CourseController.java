@@ -36,4 +36,10 @@ public class CourseController {
     public ResponseEntity<?> findStudentsByIdCourse(@PathVariable Long idCourse ){
     return ResponseEntity.ok(coursesServices.findStudentsByIdCourse(idCourse));
     }
+
+    @PutMapping("/put/{id}")
+    public ResponseEntity<String> actualzarCourse(@PathVariable Long id, @RequestBody Course course){
+
+    }
+
 }
