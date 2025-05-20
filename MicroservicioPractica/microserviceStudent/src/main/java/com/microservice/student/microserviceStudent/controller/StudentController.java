@@ -38,7 +38,13 @@ public class StudentController {
 
     @PutMapping("/put/{id}")
     public ResponseEntity<String> eliminarStudent(@PathVariable Long id, @RequestBody Student student){
-    
+    try{
+        Student actualizarStudent = studentService.updateStudent(id, student);
+        return ResponseEntity.status(HttpStatus.CREATED).body("Editado con exito");
+    }catch (Exception e){
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error," +
+                "inténtelo más tarde.");
+    }
     }
 
 }
