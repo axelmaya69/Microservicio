@@ -50,7 +50,13 @@ public class CourseController {
 
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<String> eliminarCourse(@PathVariable Long id){
-        
+        try{
+            coursesServices.eliminarCourse(id);
+            return ResponseEntity.ok("Eliminado exitosamente");
+        }catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error," +
+                    "inténtelo más tarde.");
+        }
     }
 
 }
