@@ -50,7 +50,13 @@ public class StudentController {
 
     @DeleteMapping("delete/{id}")
     public ResponseEntity<String > eliminarStudent(@PathVariable Long id){
-
+    try{
+        studentService.eliminarStudent(id);
+        return ResponseEntity.ok("ELiminado exitosamente");
+    }catch (Exception e) {
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error," +
+                "inténtelo más tarde.");
+    }
     }
 
 }
