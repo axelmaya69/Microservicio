@@ -35,4 +35,10 @@ public class StudentController {
     public ResponseEntity<?> findByIdCourse(@PathVariable Long idCourse){
     return ResponseEntity.ok(studentService.findByIdCourse(idCourse));
     }
+
+    @PutMapping("/put/{id}")
+    public ResponseEntity<String> eliminarStudent(@PathVariable Long id, @RequestBody Student student){
+    
+    }
+
 }
